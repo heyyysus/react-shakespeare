@@ -25,6 +25,6 @@ html, body {
   margin: auto;
 }
 
-.navbar-item > p{
-  color: #FFFFFF;
+.navbar-item{
+  background-color: #FFFFFF;
 }
