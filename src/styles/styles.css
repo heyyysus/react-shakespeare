@@ -1,7 +1,15 @@
+html, body {
+  margin:0px;
+  height:100%;
+}
+
 .wrapper {
   margin: auto;
-  max-width: 500px;
-  height: 100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
   border: 1px black solid;
   background-color: #222222;
   color: #FFFFFF;
