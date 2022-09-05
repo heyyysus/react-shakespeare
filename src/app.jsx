@@ -6,6 +6,7 @@ import "./styles/styles.css";
 
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
+import Navbar from './components/navbar.jsx';
 
 // Home function that is reflected across the site
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
           <PageRouter />
         </div>
       </main>
+      <Navbar />
     </Router>
   );
 }

@@ -8,10 +8,23 @@ html, body {
   position:absolute;
   top:0px;
   right:0px;
-  bottom:0px;
+  bottom:70px;
   left:0px;
   border: 1px black solid;
   background-color: #222222;
   color: #FFFFFF;
   padding: 20px;
+}
+
+.navbar {
+  background-color: #111111;
+  width: 100%;
+  height: 70px;
+  position:absolute;
+  bottom: 0px;
+  margin: auto;
+}
+
+.navbar-item > p{
+  color: #FFFFFF;
 }
