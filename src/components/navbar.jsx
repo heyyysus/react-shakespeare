@@ -10,16 +10,21 @@ import { Link } from 'wouter';
 const Navbar = (props) => {
   const numOfElements = 4;
   const selection = props.selection % numOfElements;
-  const items = ["Home", "Plays", "Predictor", "About"];
+  const items = [
+    { name: "Home", path: "/" },
+    { name: "Plays", path: "/plays" },
+    { name: "Predictor", path: "/predictor" },
+    { name: "About", path: "/about" },
+  ];
   
   return (
     <div className="navbar">
       {
-        items.map(itemName => {
+        items.map(item => {
           return (
-            <Link href=``>
+            <Link href={item.path}>
               <div className="navbar-item">
-                <p>{itemName}</p>
+                <p>{item.name}</p>
               </div>
             </Link>
            
