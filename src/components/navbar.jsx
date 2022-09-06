@@ -14,7 +14,7 @@ const Navbar = (props) => {
   return (
     <div className="navbar">
       {
-        items.forEach(itemName => {
+        items.map(itemName => {
           return (
             <div className="navbar-item">
               <p>{itemName}</p>
