@@ -17,7 +17,7 @@ const Navbar = (props) => {
       {
         items.map(itemName => {
           return (
-            <Link href="">
+            <Link href=``>
               <div className="navbar-item">
                 <p>{itemName}</p>
               </div>
