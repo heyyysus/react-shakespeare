@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 
 /*
   props: {
@@ -16,9 +17,12 @@ const Navbar = (props) => {
       {
         items.map(itemName => {
           return (
-            <div className="navbar-item">
-              <p>{itemName}</p>
-            </div>
+            <Link href="">
+              <div className="navbar-item">
+                <p>{itemName}</p>
+              </div>
+            </Link>
+           
           );
         })
       }
