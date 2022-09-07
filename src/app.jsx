@@ -17,7 +17,7 @@ export default function Home() {
           <PageRouter />
         </div>
       </main>
-      <Navbar />
+      <Navbar selection={ 0 } />
     </Router>
   );
 }

@@ -22,8 +22,8 @@ const Navbar = (props) => {
       {
         items.map((item, index) => {
           return (
-            <Link href={item.path}>
-              <div className={`navbar-item` + () ? "" : "" }>
+            <Link href={item.path} key={selection}>
+              <div className={[...["navbar-item"], ...((selection === index) ? ["selected"] : [])]}>
                 <p>{item.name}</p>
               </div>
             </Link>
