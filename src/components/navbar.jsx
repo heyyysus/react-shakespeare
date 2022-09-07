@@ -17,13 +17,17 @@ const Navbar = (props) => {
     { name: "About", path: "/about" },
   ];
   
+  let selected = "";
+  
   return (
     <div className="navbar">
       {
         items.map((item, index) => {
+          const selected = (selection === index) ? "selected" : "";
+          const classes = "navbar-item " +  selected;
           return (
             <Link href={item.path} key={selection}>
-              <div className={[...["navbar-item"], ...((selection === index) ? ["selected"] : [])]}>
+              <div className={classes}>
                 <p>{item.name}</p>
               </div>
             </Link>

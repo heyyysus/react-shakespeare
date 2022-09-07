@@ -48,8 +48,9 @@ html, body {
 
 .navbar-item > p {
   cursor: default;
+  color: #a1a1a1;
 }
 
-.navbar-item > .selected {
-  color: #f1f1f1;
+.navbar-item.selected > p {
+  color: #ffffff;
 }
