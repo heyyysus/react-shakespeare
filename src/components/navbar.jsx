@@ -20,10 +20,10 @@ const Navbar = (props) => {
   return (
     <div className="navbar">
       {
-        items.map(item => {
+        items.map((item, index) => {
           return (
             <Link href={item.path}>
-              <div className="navbar-item">
+              <div className={`navbar-item` + () ? "" : "" }>
                 <p>{item.name}</p>
               </div>
             </Link>
