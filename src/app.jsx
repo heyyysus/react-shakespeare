@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Router, Link } from "wouter";
+import { Router, Link, useLocation } from "wouter";
 
 // Import and apply CSS stylesheet
 import "./styles/styles.css";
@@ -10,6 +10,7 @@ import Navbar from './components/navbar.jsx';
 
 // Home function that is reflected across the site
 export default function Home() {
+  const [ location, setLocation ] = useLocation();
   return (
     <Router>
       <main role="main" className="wrapper">
@@ -17,7 +18,7 @@ export default function Home() {
           <PageRouter />
         </div>
       </main>
-      <Navbar selection={ 0 } />
+      <Navbar path={ location } />
     </Router>
   );
 }

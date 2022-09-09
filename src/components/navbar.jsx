@@ -3,18 +3,17 @@ import { Link } from 'wouter';
 
 /*
   props: {
-    selection: number
+    path: string
   }
 */
 
 const Navbar = (props) => {
   const numOfElements = 4;
-  const selection = props.selection % numOfElements;
   const items = [
     { name: "Home", path: "/" },
     { name: "Plays", path: "/plays" },
     { name: "Predictor", path: "/predictor" },
-    { name: "About", path: "/about" },
+    { name: "Settings", path: "/settings" },
   ];
   
   let selected = "";
@@ -23,10 +22,10 @@ const Navbar = (props) => {
     <div className="navbar">
       {
         items.map((item, index) => {
-          const selected = (selection === index) ? "selected" : "";
+          const selected = (props.path === item.path) ? "selected" : "";
           const classes = "navbar-item " +  selected;
           return (
-            <Link href={item.path} key={selection}>
+            <Link href={item.path} key={index}>
               <div className={classes}>
                 <p>{item.name}</p>
               </div>

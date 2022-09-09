@@ -9,48 +9,101 @@ html, body {
   position:absolute;
   top:0px;
   right:0px;
-  bottom:70px;
+  bottom:50px;
   left:0px;
-  border: 1px black solid;
-  background-color: #222222;
+
+  background-color: #1A1A1A;
   color: #FFFFFF;
   padding: 20px;
   overflow: auto;
 }
 
 .navbar {
-  background-color: #1A1A1A;
+  background-color: #3A3A3A;
   width: 100%;
-  height: 70px;
+  height: 50px;
   position:absolute;
   bottom: 0px;
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .navbar-item {
   color: #ffffff;
   font-size: 15px;
-  width: 75px;
-  height: 50px;
+  flex: 1;
   text-align: center;
   padding: 3px;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 .navbar-item:hover {
-  border: 1px solid blue;
+  background-color: #4a4a4a;
 }
 
 .navbar-item > p {
   cursor: default;
-  color: #a1a1a1;
+  color: #a5a5a5;
 }
 
 .navbar-item.selected > p {
   color: #ffffff;
+}
+
+.play-title {
+  padding: 10px;
+}
+
+.play-title:hover {
+  background-color: #4a4a4a;
+  color: #6ba7fb;
+}
+
+.expand {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.expand:hover {
+  cursor: grab;
+}
+
+.play-menu-item {
+  margin: 5px;
+}
+
+.play-menu-item:hover {
+  cursor: grab;
+}
+
+.play-stagedir {
+  font-style: italic;
+}
+
+.play-line {
+  margin: 1px;
+}
+
+.predictor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.predictor > textarea {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 400px;
+  width: 50%;
+  height: 300px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.ext-link {
+  color: #f1f1f1;
 }
